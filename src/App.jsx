@@ -254,8 +254,8 @@ export default function App() {
     const interval = setInterval(() => {
       const bug = {
         id: Date.now() + Math.random(),
-        x: Math.random() * 90,
-        y: Math.random() * 90,
+        x: Math.random() * 85,
+        y: Math.random() * 80,
       };
 
       setBugs((prev) => [...prev, bug]);
@@ -391,7 +391,7 @@ export default function App() {
           <div
             key={bug.id}
             onClick={() => killBug(bug.id)}
-            className="absolute text-2xl cursor-pointer"
+            className="absolute text-4xl cursor-pointer hover:scale-110 transition"
             style={{
               left: `${bug.x}%`,
               top: `${bug.y}%`,
