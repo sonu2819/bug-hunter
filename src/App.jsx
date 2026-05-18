@@ -475,6 +475,7 @@
 
 
 import { useEffect, useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   const [bugs, setBugs] = useState([]);
@@ -738,6 +739,7 @@ export default function App() {
 
       </div>
 
+      <Analytics />
     </div>
   );
 }
